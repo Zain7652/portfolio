@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zain-Developer PortFolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 34);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(3, 3, 64);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(79, 79, 96);
+        font-size: 1.03rem;
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(70, 92, 122);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.3rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2rem;
+        margin: 30px 0;
+      }
+      .rightSection img {
+        width: 98%;
+      }
+      .purple {
+        color: orange;
+      }
+      .liteblue-color {
+        color: grey;
+      }
+      #element {
+        color: orange;
+      }
+      .SecondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .SecondSection h1 {
+        font-size: 1.6rem;
+      }
+      .SecondSection .Box {
+        background-color: white;
+        width: 70vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .SecondSection .Vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 180px;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .verticle-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .verticle-desc {
+        position: relative;
+        width: 150px;
+        color: grey;
+        font-size: 11px;
+        top: 86px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Zain PortFolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+         
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi,My Name is <span class="purple">Zain</span>
+          <div>And I am a passionate</div>
+
+          <span id="element"></span>
+        </div>
+
+        <div class="rightSection"><img src="bg.png" alt="" /></div>
+      </section>
+      <hr />
+      <section class="SecondSection">
+        <span class="liteblue-color">What i have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="Box">
+          <div class="Vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="verticle-title">HTML Developer</div>
+            <div class="verticle-desc">
+              I am a skilled HTML developer with expertise in crafting elegant
+              and responsive websites that seamlessly blend aesthetics with
+              functionality. Let me bring your digital ideas to life with clean,
+              efficient code and a user-friendly experience.
+            </div>
+          </div>
+          <div class="Vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="verticle-title">Web designer</div>
+            <div class="verticle-desc">
+              Experienced web designer skilled in creating visually engaging and
+              user-centric websites that captivate audiences and elevate online
+              experiences. Transforming digital presence with intuitive design
+              and captivating aesthetics.
+            </div>
+          </div>
+        <div class="Vertical"><img
+            class="image-top"
+            src="ve.png"
+            alt=""
+          />
+          <div class="verticle-title">Video Editor</div>
+          <div class="verticle-desc">
+            I am a skilled video editor proficient in crafting visually stunning
+            and seamless videos that captivate viewers and deliver impactful
+            messages. With expertise in editing techniques and storytelling, I
+            bring your vision to life and create compelling visual narratives.
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web designer", "Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
