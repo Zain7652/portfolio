@@ -32,7 +32,3 @@ git push
 ```
 
 The previous site is preserved on the `old-portfolio` branch.
-
-## To do
-
-- [ ] Add a real screenshot at `assets/shop-app-1.png` and update the `<img src>` in `index.html`

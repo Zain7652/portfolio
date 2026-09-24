@@ -285,9 +285,7 @@ img {
 }
 .project-media img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
 }
 .project-body h3 {
   font-size: 1.5rem;
